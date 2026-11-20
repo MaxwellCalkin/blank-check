@@ -1,6 +1,6 @@
 # Public copy: what the last export found
 
-Written by `ops/export-public.mjs` from commit `24b9c28`. The copy is in `public-copy/`, which git ignores. This script publishes nothing.
+Written by `ops/export-public.mjs` from commit `0b7c259`. The copy is in `public-copy/`, which git ignores. This script publishes nothing.
 
 - Files: 4940, 232 MB. No history.
 - Left out: `ops/export-redactions.json`.

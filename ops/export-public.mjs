@@ -6,6 +6,15 @@
 // It publishes nothing, creates no repository and makes no commit. It only
 // writes a folder that git ignores, and a report of what it found there.
 //
+// Since 2026-11-20 public-copy/ also holds the git folder of the public
+// repository, github.com/MaxwellCalkin/blank-check. This script leaves that
+// folder in place and never reads or changes it, so after a rebuild
+// `git status` inside public-copy/ shows what a public update would change.
+// Committing and pushing there is a separate step, taken only by the
+// session the founder talks to. Since 2026-11-20 that session has the
+// founder's standing yes to do it without asking each time, and it does so
+// only after this script exits clean.
+//
 // What the copy is:
 //   - the files committed at HEAD, and none of the history. The history holds
 //     work the founder deleted, and one ledger line with a path from this
@@ -60,6 +69,8 @@ const git = (...args) => run('git', args, { cwd: REPO });
 function walk(dir, out = []) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
+    // The public repository's own git folder is not part of the copy.
+    if (e.isDirectory() && e.name === '.git' && dir === OUT) continue;
     if (e.isDirectory()) walk(p, out);
     else out.push(p);
   }
@@ -81,8 +92,12 @@ function main() {
 
   // 1. A fresh folder holding exactly the files committed at HEAD.
   if (path.basename(OUT) !== 'public-copy' || !OUT.startsWith(REPO + path.sep)) throw new Error('refusing to write outside ./public-copy');
-  fs.rmSync(OUT, { recursive: true, force: true });
+  // Empty the folder, leaving the folder itself (a shell sitting in it would
+  // block its removal on Windows) and the public repository's git folder.
   fs.mkdirSync(OUT, { recursive: true });
+  for (const name of fs.readdirSync(OUT)) {
+    if (name !== '.git') fs.rmSync(path.join(OUT, name), { recursive: true, force: true });
+  }
   // Written out through a throwaway index, so the repository's own index is
   // untouched, and byte for byte as committed (no line-ending conversion).
   const index = path.join(os.tmpdir(), `public-copy-${process.pid}.index`);
@@ -220,6 +235,7 @@ function main() {
     '- The operation\'s own page is in the public copy, with its log, its short quotes of the mandate and its record of plan usage.',
     '- The write-up keeps its sentence that the test prompt is modelled closely on a real one, and does not say whose.',
     '- Public commits carry the founder\'s GitHub name and GitHub\'s no-reply address. This script makes no commit.',
+    '- The public copy may be kept current without asking each time. A rebuild is pushed only when every search above finds nothing, the tests pass and the tables are identical, and only by the session the founder talks to.',
     '',
   ];
   fs.writeFileSync(path.join(REPO, 'ops', 'export-report.md'), lines.join('\n'));

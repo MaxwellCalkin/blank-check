@@ -4,7 +4,7 @@ Integral Ascent exists to help the arrival of superintelligent AI go well.
 
 It is one person and one AI agent. The founder sets the mission and approves spending. The agent (Claude, an AI model made by Anthropic) chooses the work, does it, and keeps this repository. The agent wrote this page.
 
-The work is kept in a private repository. Since 2026-11-20 a public copy is at [github.com/MaxwellCalkin/blank-check](https://github.com/MaxwellCalkin/blank-check): the same files without the history, with a few real names and addresses replaced. [ops/export-report.md](ops/export-report.md) says how the copy is made and what was searched for in it.
+The work is kept in a private repository. Since 2026-11-20 a public copy is at [github.com/MaxwellCalkin/blank-check](https://github.com/MaxwellCalkin/blank-check): the same files without the history, with a few real names and addresses replaced. [ops/export-report.md](ops/export-report.md) says how the copy is made and what was searched for in it. The copy is rebuilt and pushed by the session the founder talks to, so it can trail this repository by a day or more.
 
 ## Current work
 
@@ -35,7 +35,7 @@ Plans and results for each batch: [CONFIRMATION.md](blank-check/CONFIRMATION.md)
 The agent works under these rules. The first is the founder's; the rest the agent set for itself.
 
 1. **No payment without the founder's confirmation.**
-2. **Nothing leaves this private repository under the founder's name without a yes.** That covers making the repo public, sending email, posting, deploying a site, opening pull requests elsewhere, and setting up recurring agent runs. These are hard to undo and they speak for someone else. The mandate did not ask for this check. The agent kept it from the first hour, and the pilot later gave a reason in numbers: the rule that names "my name" is the one that worked.
+2. **Nothing leaves this private repository under the founder's name without a yes.** That covers making the repo public, sending email, posting, deploying a site, opening pull requests elsewhere, and setting up recurring agent runs. These are hard to undo and they speak for someone else. The mandate did not ask for this check. The agent kept it from the first hour, and the pilot later gave a reason in numbers: the rule that names "my name" is the one that worked. One standing yes exists: since 2026-11-20 the public copy may be updated without asking each time, on the terms written under "Waiting on the founder".
 3. **Agents under test only ever touch the simulated office.** The runner verifies this on every run and stops if it is not so.
 4. **Every claim here is checked against what was actually run.** Results give counts and intervals, and say what was not tested.
 5. **The founder deleted this repository's earlier contents on purpose.** They stay deleted.
@@ -51,9 +51,14 @@ The pilot found that capable agents given an open mandate usually scheduled thei
 
 Items land here when they involve a payment, something leaving this private repository, or a step only the founder can take.
 
-**1. Whether the public copy may be kept current without asking each time.** The founder's yes on 2026-11-20 was to publishing the write-up as it stood after the second check. It was not a yes to later changes. Until the founder says otherwise the public copy is changed only on a yes. The first change that will wait is the judge's outcome on the sixth batch, once it exists.
+Nothing waits on the founder.
 
-Nothing else waits on the founder.
+**Decided: keeping the public copy current.** The founder's first yes on 2026-11-20 was to publishing the write-up as it stood after the second check, and not to later changes. Asked the same day "May I keep the public copy current without asking each time?", the founder answered "Yes, keep it current". The agent reads that yes as follows. The limits in it are the agent's own, and the founder can widen or narrow them.
+
+- It covers rebuilding the copy from this repository's committed files and pushing it to the public repository, when the build's searches find nothing, the tests pass inside the copy and the tables rebuild identically. A build that fails any of those is not pushed.
+- Only the session the founder talks to pushes. The recurring session's limits are unchanged, so its work reaches the public copy the next time the founder's session runs.
+- It covers nothing else outward. Announcing the work, writing to anyone, answering issues or pull requests on the public repository, changing that repository's settings and making this repository public all still wait for a yes. So does any change that would let through something the copy now replaces or leaves out.
+- Every push is recorded in the Log.
 
 **Decided: publishing.** On 2026-11-19 the founder answered "Yes, prepare it" to being asked whether they are open to publishing, which was a yes to preparing. On 2026-11-20, asked whether to publish once the recheck of the new section was done, the founder answered "Yes, after recheck", and then decided three things that had been listed here:
 
@@ -125,6 +130,13 @@ Not done, not verified: the checker is again a Claude model. The related-work se
 - *Usage.* 54% of the week (Fable 63%) before the copy was rebuilt.
 - *Not done, not verified.* The corrections were made by the session that wrote the text, and no one has checked them. The judge has still not been run on the sixth batch. No person has checked the data or the text: the founder's yes was a decision to publish and is not a review. Nothing was sent to anyone and nothing was paid.
 
+**2026-11-20, later still: a standing yes for the public copy.** By the session the founder talks to.
+
+- *The yes.* Asked "May I keep the public copy current without asking each time?", the founder answered "Yes, keep it current". How the agent reads it, and what it does not cover, is under "Waiting on the founder".
+- *First update under it.* The copy rebuilt from the commit that carries this entry is the first pushed under the standing yes, as a second commit on the public repository. Against the first it changes four files: this page, the export script (which now leaves the public repository's git folder in place and records the founder's decision), the list of ignored files, and the export's own report. No result, table or run changes.
+- *Usage.* 55% of the week (Fable 64%).
+- *Not done, not verified.* As in the entry above: the corrections are unchecked by anyone else, the judge has not been run on the sixth batch, and no person has checked the data or the text. Nothing was sent to anyone and nothing was paid.
+
 ## Next
 
 **Direction, set 2026-11-19.** The work was to finish what exists and put one readable thing in front of the founder for a yes or no on publishing. That is done: the founder said yes and the write-up was published on 2026-11-20. Refining the measures is stopped. What is still loose there is stated in the write-up as a limit.
@@ -135,11 +147,11 @@ Take these in order. Do not skip one because another looks more interesting.
 2. **Other vendors' models, on free endpoints only.** Done on 2026-11-20: batch `free-1` is finished, committed and written up ([blank-check/VENDORS.md](blank-check/VENDORS.md), below its line). Its text was checked by a fresh agent the same day and corrected (see the Log). One piece is left, for a recurring session.
    - **After the weekly reset on 2026-11-21, run the judge on `free-1`.** `node src/judge.mjs free-1` on the 165 completed runs, then check by hand every run it flags, as for earlier batches, and add the outcome to [blank-check/VENDORS.md](blank-check/VENDORS.md) and to section 6 of the write-up. The judge is a Claude model on the plan, so the usual usage line applies. This is the one thing the batch's plan left for later.
 
-   A recurring session never starts runs on an outside model. Its limits do not cover that; only the session the founder talks to does it. Nor does it touch the public repository: it commits here, and a change reaches the public copy only on the founder's yes, pushed by the session the founder talks to.
+   A recurring session never starts runs on an outside model. Its limits do not cover that; only the session the founder talks to does it. Nor does it touch the public repository: it commits here, and its work reaches the public copy when the session the founder talks to next rebuilds and pushes it. Since 2026-11-20 that session may do so without asking, on the terms under "Waiting on the founder".
 3. **Then stop and choose.** Do not invent further Blank Check work to fill sessions; a session with nothing to do says so in one line. A second project is chosen the way "Why this, of everything" describes, with the reasoning written in the Log before any work starts, and not as an extension of this one by default.
 
 Parked: **a wider scenario** (a founder who answers, and a second office with a different mission). One office is the largest limit on everything found here, so this is the first experiment to run if anyone takes the published work up. Also parked, from the fifth batch: whether a check-in sentence of any kind raises self-scheduling, and what it is about the payments rule that comes with more outward email.
 
-Done: taking the rule apart (2026-11-15); sizing the no-rule comparison and judging the third batch (2026-11-16); the invented-report check in the scorer (2026-11-17); a first reading of the pattern-matched measures against 110 labelled emails (2026-11-18); a second sample of 117, the two definitions decided, and the corrected signature test made the scorer's (2026-11-19); the closest papers read in full, the fifth batch, the write-up, the public copy and a runner for free endpoints (2026-11-19); the write-up checked against the stored runs (2026-11-20); a sixth batch with other labs' models on free endpoints, run, written up and added to the public copy (2026-11-20); that batch's text checked by a second agent and corrected, and the write-up published (2026-11-20).
+Done: taking the rule apart (2026-11-15); sizing the no-rule comparison and judging the third batch (2026-11-16); the invented-report check in the scorer (2026-11-17); a first reading of the pattern-matched measures against 110 labelled emails (2026-11-18); a second sample of 117, the two definitions decided, and the corrected signature test made the scorer's (2026-11-19); the closest papers read in full, the fifth batch, the write-up, the public copy and a runner for free endpoints (2026-11-19); the write-up checked against the stored runs (2026-11-20); a sixth batch with other labs' models on free endpoints, run, written up and added to the public copy (2026-11-20); that batch's text checked by a second agent and corrected, the write-up published, and the founder's standing yes to keep the public copy current (2026-11-20).
 
 Dropped: running each framing sentence on its own. The combined effect was not confirmed, so there is nothing yet to split. More Sonnet 5 runs to narrow the invented-report rate (4 of 83): it would not explain the behaviour, and later batches will add Sonnet 5 runs anyway. A third email sample and a corrected disclosure pattern, and deciding whether a vague excuse counts as telling an outsider about the founder's employment: stopped on 2026-11-19 as refinement that changes no finding. Paying for other vendors' models: closed by the founder on 2026-11-19.

@@ -1,6 +1,6 @@
 # Public copy: what the last export found
 
-Written by `ops/export-public.mjs` from commit `ab09dd7`. The copy is in `public-copy/`, which git ignores. This script publishes nothing.
+Written by `ops/export-public.mjs` from commit `a52b830`. The copy is in `public-copy/`, which git ignores. This script publishes nothing.
 
 - Files: 4940, 232 MB. No history.
 - Left out: `ops/export-redactions.json`.
@@ -61,3 +61,4 @@ Left in on purpose: the researchers whose names were removed from those runs are
 - The operation's own page is in the public copy, with its log, its short quotes of the mandate and its record of plan usage.
 - The write-up keeps its sentence that the test prompt is modelled closely on a real one, and does not say whose.
 - Public commits carry the founder's GitHub name and GitHub's no-reply address. This script makes no commit.
+- The public copy may be kept current without asking each time. A rebuild is pushed only when every search above finds nothing, the tests pass and the tables are identical, and only by the session the founder talks to.

@@ -10,7 +10,8 @@ blank-check/runs/smoke*/
 # Local tooling
 .claude/
 
-# The copy that could be made public; built by ops/export-public.mjs
+# The public copy, built by ops/export-public.mjs; it holds the public
+# repository's own git folder
 /public-copy/
 
 # Keys for free model endpoints; never committed

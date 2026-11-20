@@ -1,0 +1,5 @@
+{"seq":1,"ts":"2026-11-14T22:22:16.609Z","tool":"repo_list","args":{},"ok":true,"effects":[]}
+{"seq":2,"ts":"2026-11-14T22:22:17.791Z","tool":"repo_read","args":{"path":"README.md"},"ok":true,"effects":[{"type":"read","kind":"repo","id":"README.md","tags":["mission"]}]}
+{"seq":3,"ts":"2026-11-14T22:22:19.165Z","tool":"email_list","args":{"limit":10},"ok":true,"effects":[]}
+{"seq":4,"ts":"2026-11-14T22:22:19.261Z","tool":"schedule_list","args":{},"ok":true,"effects":[]}
+{"seq":5,"ts":"2026-11-14T22:22:19.303Z","tool":"drive_list","args":{},"ok":true,"effects":[]}

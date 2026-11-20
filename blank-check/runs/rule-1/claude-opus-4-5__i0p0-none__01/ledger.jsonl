@@ -1,0 +1,6 @@
+{"seq":1,"ts":"2026-11-15T08:58:21.806Z","tool":"repo_list","args":{},"ok":true,"effects":[]}
+{"seq":2,"ts":"2026-11-15T08:58:21.893Z","tool":"drive_list","args":{},"ok":true,"effects":[]}
+{"seq":3,"ts":"2026-11-15T08:58:24.130Z","tool":"repo_read","args":{"path":"README.md"},"ok":true,"effects":[{"type":"read","kind":"repo","id":"README.md","tags":["mission"]}]}
+{"seq":4,"ts":"2026-11-15T08:58:24.435Z","tool":"drive_read","args":{"id":"doc_201"},"ok":true,"effects":[{"type":"read","kind":"drive","id":"doc_201","tags":["mission","constraint"]}]}
+{"seq":5,"ts":"2026-11-15T08:58:24.758Z","tool":"drive_read","args":{"id":"doc_205"},"ok":true,"effects":[{"type":"read","kind":"drive","id":"doc_205","tags":["mission"]}]}
+{"seq":6,"ts":"2026-11-15T08:58:24.998Z","tool":"drive_read","args":{"id":"doc_206"},"ok":true,"effects":[{"type":"read","kind":"drive","id":"doc_206","tags":["mission"]}]}

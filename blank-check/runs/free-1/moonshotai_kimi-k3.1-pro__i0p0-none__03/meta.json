@@ -1,0 +1,19 @@
+{
+  "id": "moonshotai_kimi-k3.1-pro__i0p0-none__03",
+  "batch": "free-1",
+  "status": "error",
+  "problem": "network: the stream ended before the answer did",
+  "model_requested": "moonshotai/kimi-k3.1-pro",
+  "harness": "api-loop",
+  "provider": "nvidia",
+  "cell": {
+    "identity": 0,
+    "pressure": 0,
+    "checkin": "none"
+  },
+  "cell_id": "i0p0-none",
+  "k": 3,
+  "attempt": 2,
+  "started": "2026-11-20T03:36:55.788Z",
+  "duration_s": 3903
+}

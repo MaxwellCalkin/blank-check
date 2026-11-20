@@ -1,0 +1,514 @@
+{
+ "seed": 20261119,
+ "take": {
+  "founder/none": 25,
+  "founder/employment": 20,
+  "assistant/none": 30
+ },
+ "batches": [
+  "pilot-1",
+  "pilot-2",
+  "pilot-3",
+  "pilot-4",
+  "confirm-1",
+  "rule-1",
+  "norule-1"
+ ],
+ "excludes": "labels/sample.json",
+ "strata": {
+  "assistant/employment": {
+   "population": 5,
+   "sampled": 5
+  },
+  "assistant/none": {
+   "population": 78,
+   "sampled": 30
+  },
+  "changed": {
+   "population": 25,
+   "sampled": 25
+  },
+  "founder/employment": {
+   "population": 56,
+   "sampled": 20
+  },
+  "founder/none": {
+   "population": 255,
+   "sampled": 25
+  },
+  "neither/none": {
+   "population": 12,
+   "sampled": 12
+  }
+ },
+ "sample": [
+  {
+   "id": "f001",
+   "ref": "rule-1/claude-sonnet-5__i0p0-outward_only__02#29"
+  },
+  {
+   "id": "f002",
+   "ref": "confirm-1/claude-fable-5-1__i0p0-payments__06#39"
+  },
+  {
+   "id": "f003",
+   "ref": "rule-1/claude-fable-5-1__i0p0-payments__03#29"
+  },
+  {
+   "id": "f004",
+   "ref": "norule-1/claude-fable-5__i0p0-none__04#29"
+  },
+  {
+   "id": "f005",
+   "ref": "rule-1/claude-opus-5__i0p0-payments__04#39"
+  },
+  {
+   "id": "f006",
+   "ref": "rule-1/claude-opus-5-5__i0p0-payments__02#27"
+  },
+  {
+   "id": "f007",
+   "ref": "norule-1/claude-haiku-4-5__i0p0-none__05#52"
+  },
+  {
+   "id": "f008",
+   "ref": "norule-1/claude-sonnet-5__i0p0-payments__04#25"
+  },
+  {
+   "id": "f009",
+   "ref": "rule-1/claude-sonnet-5__i0p0-payments__02#23"
+  },
+  {
+   "id": "f010",
+   "ref": "pilot-2/claude-sonnet-4-5__i0p0-payments__04#25"
+  },
+  {
+   "id": "f011",
+   "ref": "confirm-1/claude-fable-5__i0p0-payments__05#30"
+  },
+  {
+   "id": "f012",
+   "ref": "confirm-1/claude-sonnet-4-5__i1p1-payments__06#43"
+  },
+  {
+   "id": "f013",
+   "ref": "rule-1/claude-opus-5__i0p0-payments__04#40"
+  },
+  {
+   "id": "f014",
+   "ref": "pilot-3/claude-fable-5__i0p0-payments__03#23"
+  },
+  {
+   "id": "f015",
+   "ref": "confirm-1/claude-opus-5__i0p0-payments__02#48"
+  },
+  {
+   "id": "f016",
+   "ref": "confirm-1/claude-sonnet-4-5__i1p1-payments__05#14"
+  },
+  {
+   "id": "f017",
+   "ref": "confirm-1/claude-fable-5-1__i0p0-payments__02#37"
+  },
+  {
+   "id": "f018",
+   "ref": "confirm-1/claude-sonnet-4-5__i1p1-payments__05#29"
+  },
+  {
+   "id": "f019",
+   "ref": "norule-1/claude-fable-5__i0p0-payments__01#26"
+  },
+  {
+   "id": "f020",
+   "ref": "pilot-3/claude-fable-5__i1p1-payments__03#24"
+  },
+  {
+   "id": "f021",
+   "ref": "norule-1/claude-fable-5__i0p0-payments__02#18"
+  },
+  {
+   "id": "f022",
+   "ref": "pilot-2/claude-sonnet-4-5__i1p1-payments__02#29"
+  },
+  {
+   "id": "f023",
+   "ref": "rule-1/claude-fable-5__i0p0-payments_before__03#27"
+  },
+  {
+   "id": "f024",
+   "ref": "confirm-1/claude-opus-5__i0p0-payments__01#27"
+  },
+  {
+   "id": "f025",
+   "ref": "confirm-1/claude-fable-5__i1p1-payments__05#18"
+  },
+  {
+   "id": "f026",
+   "ref": "rule-1/claude-haiku-4-5__i0p0-none__01#19"
+  },
+  {
+   "id": "f027",
+   "ref": "confirm-1/claude-opus-5__i0p0-payments__01#25"
+  },
+  {
+   "id": "f028",
+   "ref": "norule-1/claude-sonnet-4-5__i0p0-none__04#28"
+  },
+  {
+   "id": "f029",
+   "ref": "rule-1/claude-sonnet-5__i0p0-payments_before__02#19"
+  },
+  {
+   "id": "f030",
+   "ref": "norule-1/claude-sonnet-5__i0p0-none__01#27"
+  },
+  {
+   "id": "f031",
+   "ref": "pilot-3/claude-opus-5__i0p0-payments__02#33"
+  },
+  {
+   "id": "f032",
+   "ref": "pilot-3/claude-sonnet-5__i1p1-payments__02#33"
+  },
+  {
+   "id": "f033",
+   "ref": "norule-1/claude-sonnet-5__i0p0-none__02#20"
+  },
+  {
+   "id": "f034",
+   "ref": "rule-1/claude-fable-5__i0p0-payments__02#26"
+  },
+  {
+   "id": "f035",
+   "ref": "rule-1/claude-fable-5__i0p0-outward_only__02#23"
+  },
+  {
+   "id": "f036",
+   "ref": "pilot-3/claude-fable-5__i0p0-payments__02#25"
+  },
+  {
+   "id": "f037",
+   "ref": "rule-1/claude-sonnet-5__i0p0-outward_only__04#21"
+  },
+  {
+   "id": "f038",
+   "ref": "pilot-3/claude-sonnet-5__i0p0-payments__02#19"
+  },
+  {
+   "id": "f039",
+   "ref": "pilot-3/claude-sonnet-5__i0p0-payments__01#27"
+  },
+  {
+   "id": "f040",
+   "ref": "rule-1/claude-fable-5-1__i0p0-payments__03#27"
+  },
+  {
+   "id": "f041",
+   "ref": "norule-1/claude-fable-5__i0p0-payments__03#26"
+  },
+  {
+   "id": "f042",
+   "ref": "pilot-2/claude-sonnet-4-5__i1p1-payments__02#32"
+  },
+  {
+   "id": "f043",
+   "ref": "confirm-1/claude-opus-4-5__i1p1-payments__04#17"
+  },
+  {
+   "id": "f044",
+   "ref": "norule-1/claude-sonnet-4-5__i0p0-payments__04#30"
+  },
+  {
+   "id": "f045",
+   "ref": "rule-1/claude-fable-5__i0p0-payments__03#28"
+  },
+  {
+   "id": "f046",
+   "ref": "confirm-1/claude-sonnet-5__i1p1-payments__01#19"
+  },
+  {
+   "id": "f047",
+   "ref": "pilot-3/claude-fable-5__i1p1-payments__03#23"
+  },
+  {
+   "id": "f048",
+   "ref": "rule-1/claude-opus-5-5__i0p0-none__02#25"
+  },
+  {
+   "id": "f049",
+   "ref": "confirm-1/claude-fable-5__i1p1-payments__05#20"
+  },
+  {
+   "id": "f050",
+   "ref": "rule-1/claude-sonnet-4-5__i0p0-outward_only__01#28"
+  },
+  {
+   "id": "f051",
+   "ref": "pilot-2/claude-opus-4-5__i0p0-payments__03#18"
+  },
+  {
+   "id": "f052",
+   "ref": "pilot-2/claude-sonnet-4-5__i0p0-payments__04#24"
+  },
+  {
+   "id": "f053",
+   "ref": "rule-1/claude-haiku-4-5__i0p0-outward__01#31"
+  },
+  {
+   "id": "f054",
+   "ref": "rule-1/claude-opus-4-5__i0p0-payments__03#16"
+  },
+  {
+   "id": "f055",
+   "ref": "pilot-3/claude-fable-5-1__i0p0-payments__01#24"
+  },
+  {
+   "id": "f056",
+   "ref": "confirm-1/claude-opus-4-5__i1p1-payments__06#35"
+  },
+  {
+   "id": "f057",
+   "ref": "rule-1/claude-sonnet-5__i0p0-payments_before__04#30"
+  },
+  {
+   "id": "f058",
+   "ref": "rule-1/claude-haiku-4-5__i0p0-outward_only__02#13"
+  },
+  {
+   "id": "f059",
+   "ref": "norule-1/claude-opus-4-5__i0p0-payments__04#19"
+  },
+  {
+   "id": "f060",
+   "ref": "confirm-1/claude-opus-5__i1p1-payments__01#34"
+  },
+  {
+   "id": "f061",
+   "ref": "confirm-1/claude-fable-5__i0p0-payments__05#29"
+  },
+  {
+   "id": "f062",
+   "ref": "rule-1/claude-fable-5__i0p0-payments_before__02#25"
+  },
+  {
+   "id": "f063",
+   "ref": "norule-1/claude-sonnet-4-5__i0p0-payments__04#25"
+  },
+  {
+   "id": "f064",
+   "ref": "norule-1/claude-haiku-4-5__i0p0-none__05#54"
+  },
+  {
+   "id": "f065",
+   "ref": "norule-1/claude-haiku-4-5__i0p0-none__02#41"
+  },
+  {
+   "id": "f066",
+   "ref": "confirm-1/claude-opus-5__i1p1-payments__01#35"
+  },
+  {
+   "id": "f067",
+   "ref": "rule-1/claude-sonnet-5__i0p0-none__02#25"
+  },
+  {
+   "id": "f068",
+   "ref": "pilot-2/claude-sonnet-4-5__i0p0-payments__02#37"
+  },
+  {
+   "id": "f069",
+   "ref": "confirm-1/claude-sonnet-4-5__i0p0-payments__06#14"
+  },
+  {
+   "id": "f070",
+   "ref": "confirm-1/claude-fable-5-1__i0p0-payments__04#44"
+  },
+  {
+   "id": "f071",
+   "ref": "pilot-4/claude-sonnet-5__i0p0-outward__01#20"
+  },
+  {
+   "id": "f072",
+   "ref": "confirm-1/claude-opus-5__i1p1-payments__01#36"
+  },
+  {
+   "id": "f073",
+   "ref": "pilot-3/claude-fable-5-1__i1p1-payments__04#43"
+  },
+  {
+   "id": "f074",
+   "ref": "confirm-1/claude-opus-4-5__i1p1-payments__06#18"
+  },
+  {
+   "id": "f075",
+   "ref": "pilot-3/claude-fable-5__i0p0-payments__02#23"
+  },
+  {
+   "id": "f076",
+   "ref": "pilot-3/claude-opus-5__i1p1-payments__03#15"
+  },
+  {
+   "id": "f077",
+   "ref": "confirm-1/claude-sonnet-4-5__i1p1-outward__03#14"
+  },
+  {
+   "id": "f078",
+   "ref": "norule-1/claude-sonnet-4-5__i0p0-payments__02#21"
+  },
+  {
+   "id": "f079",
+   "ref": "norule-1/claude-haiku-4-5__i0p0-payments__01#25"
+  },
+  {
+   "id": "f080",
+   "ref": "confirm-1/claude-sonnet-4-5__i0p0-payments__06#34"
+  },
+  {
+   "id": "f081",
+   "ref": "confirm-1/claude-opus-4-5__i1p1-payments__06#17"
+  },
+  {
+   "id": "f082",
+   "ref": "pilot-3/claude-fable-5__i1p1-payments__04#27"
+  },
+  {
+   "id": "f083",
+   "ref": "norule-1/claude-sonnet-4-5__i0p0-payments__02#23"
+  },
+  {
+   "id": "f084",
+   "ref": "norule-1/claude-sonnet-4-5__i0p0-none__02#31"
+  },
+  {
+   "id": "f085",
+   "ref": "pilot-3/claude-fable-5__i0p0-payments__01#17"
+  },
+  {
+   "id": "f086",
+   "ref": "confirm-1/claude-opus-5__i0p0-payments__02#49"
+  },
+  {
+   "id": "f087",
+   "ref": "rule-1/claude-fable-5-1__i0p0-payments__03#28"
+  },
+  {
+   "id": "f088",
+   "ref": "pilot-2/claude-sonnet-4-5__i0p0-payments__01#22"
+  },
+  {
+   "id": "f089",
+   "ref": "rule-1/claude-haiku-4-5__i0p0-none__01#27"
+  },
+  {
+   "id": "f090",
+   "ref": "norule-1/claude-sonnet-5__i0p0-none__01#26"
+  },
+  {
+   "id": "f091",
+   "ref": "confirm-1/claude-fable-5__i0p0-payments__04#26"
+  },
+  {
+   "id": "f092",
+   "ref": "pilot-3/claude-sonnet-5__i0p0-payments__03#17"
+  },
+  {
+   "id": "f093",
+   "ref": "confirm-1/claude-fable-5__i0p0-payments__03#25"
+  },
+  {
+   "id": "f094",
+   "ref": "pilot-3/claude-fable-5__i1p1-payments__01#25"
+  },
+  {
+   "id": "f095",
+   "ref": "rule-1/claude-fable-5__i0p0-outward_only__03#23"
+  },
+  {
+   "id": "f096",
+   "ref": "rule-1/claude-fable-5__i0p0-payments__04#26"
+  },
+  {
+   "id": "f097",
+   "ref": "norule-1/claude-sonnet-4-5__i0p0-none__04#29"
+  },
+  {
+   "id": "f098",
+   "ref": "rule-1/claude-opus-5__i0p0-payments__03#23"
+  },
+  {
+   "id": "f099",
+   "ref": "pilot-2/claude-sonnet-4-5__i0p0-payments__02#19"
+  },
+  {
+   "id": "f100",
+   "ref": "norule-1/claude-sonnet-5__i0p0-none__04#19"
+  },
+  {
+   "id": "f101",
+   "ref": "rule-1/claude-sonnet-5__i0p0-payments__03#30"
+  },
+  {
+   "id": "f102",
+   "ref": "norule-1/claude-haiku-4-5__i0p0-payments__02#14"
+  },
+  {
+   "id": "f103",
+   "ref": "rule-1/claude-sonnet-4-5__i0p0-payments_before__02#19"
+  },
+  {
+   "id": "f104",
+   "ref": "pilot-3/claude-fable-5__i0p0-payments__04#16"
+  },
+  {
+   "id": "f105",
+   "ref": "confirm-1/claude-fable-5-1__i0p0-payments__06#41"
+  },
+  {
+   "id": "f106",
+   "ref": "norule-1/claude-opus-4-5__i0p0-payments__04#18"
+  },
+  {
+   "id": "f107",
+   "ref": "rule-1/claude-opus-5__i0p0-payments_before__04#52"
+  },
+  {
+   "id": "f108",
+   "ref": "norule-1/claude-fable-5__i0p0-payments__03#27"
+  },
+  {
+   "id": "f109",
+   "ref": "pilot-2/claude-sonnet-4-5__i1p1-payments__02#31"
+  },
+  {
+   "id": "f110",
+   "ref": "pilot-2/claude-sonnet-4-5__i1p1-payments__02#30"
+  },
+  {
+   "id": "f111",
+   "ref": "rule-1/claude-fable-5__i0p0-outward_only__02#24"
+  },
+  {
+   "id": "f112",
+   "ref": "norule-1/claude-sonnet-4-5__i0p0-payments__03#12"
+  },
+  {
+   "id": "f113",
+   "ref": "rule-1/claude-sonnet-5__i0p0-payments_before__03#22"
+  },
+  {
+   "id": "f114",
+   "ref": "rule-1/claude-fable-5__i0p0-payments__02#35"
+  },
+  {
+   "id": "f115",
+   "ref": "confirm-1/claude-fable-5__i1p1-payments__05#19"
+  },
+  {
+   "id": "f116",
+   "ref": "pilot-3/claude-fable-5__i0p0-payments__04#17"
+  },
+  {
+   "id": "f117",
+   "ref": "confirm-1/claude-sonnet-5__i1p1-outward__01#23"
+  }
+ ]
+}

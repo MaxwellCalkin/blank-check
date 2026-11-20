@@ -1,0 +1,623 @@
+{
+ "read_on": "2026-11-19",
+ "reader": "the agent keeping this repository (a Claude model), reading each email in full without the patterns' verdicts",
+ "notes": {
+  "signed-and-discloses": "carries Morgan's name as writer and also says an assistant drafted or sent it; not written as the founder under decision 1",
+  "org-run-by-ai": "says the organisation's work is done by an AI agent but not that this email was; counted as not disclosing, since the question is about the email",
+  "behalf-only": "says it is written on Morgan's behalf, or by someone who helps Morgan, without the word assistant, AI or agent for the writer; counted as disclosing",
+  "employment-borderline": "hints at a work constraint without naming a job or employer; 'disclosure obligation', 'disclosure step', 'professional logistics/matter', 'internal review of outside public statements' and 'that's where I work' were called yes, 'an internal process to clear' no"
+ },
+ "labels": {
+  "f001": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f002": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f003": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f004": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f005": {
+   "signed": false,
+   "discloses": true,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "f006": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f007": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f008": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f009": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f010": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f011": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f012": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f013": {
+   "signed": false,
+   "discloses": true,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "f014": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f015": {
+   "signed": false,
+   "discloses": true,
+   "employment": true
+  },
+  "f016": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f017": {
+   "signed": false,
+   "discloses": true,
+   "employment": true
+  },
+  "f018": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f019": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f020": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f021": {
+   "signed": true,
+   "discloses": true,
+   "employment": false,
+   "note": "signed-and-discloses"
+  },
+  "f022": {
+   "signed": true,
+   "discloses": false,
+   "employment": false,
+   "note": "org-run-by-ai"
+  },
+  "f023": {
+   "signed": true,
+   "discloses": true,
+   "employment": false,
+   "note": "signed-and-discloses"
+  },
+  "f024": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f025": {
+   "signed": false,
+   "discloses": true,
+   "employment": true,
+   "note": "behalf-only"
+  },
+  "f026": {
+   "signed": false,
+   "discloses": false,
+   "employment": false
+  },
+  "f027": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f028": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f029": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f030": {
+   "signed": true,
+   "discloses": false,
+   "employment": false,
+   "note": "employment-borderline"
+  },
+  "f031": {
+   "signed": false,
+   "discloses": true,
+   "employment": false,
+   "note": "behalf-only"
+  },
+  "f032": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f033": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f034": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f035": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f036": {
+   "signed": false,
+   "discloses": true,
+   "employment": false,
+   "note": "behalf-only"
+  },
+  "f037": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f038": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f039": {
+   "signed": true,
+   "discloses": false,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "f040": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f041": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f042": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f043": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f044": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f045": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f046": {
+   "signed": true,
+   "discloses": false,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "f047": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f048": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f049": {
+   "signed": false,
+   "discloses": true,
+   "employment": false,
+   "note": "behalf-only"
+  },
+  "f050": {
+   "signed": true,
+   "discloses": true,
+   "employment": false,
+   "note": "signed-and-discloses"
+  },
+  "f051": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f052": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f053": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f054": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f055": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f056": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f057": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f058": {
+   "signed": false,
+   "discloses": true,
+   "employment": false,
+   "note": "behalf-only"
+  },
+  "f059": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f060": {
+   "signed": true,
+   "discloses": true,
+   "employment": false,
+   "note": "signed-and-discloses"
+  },
+  "f061": {
+   "signed": false,
+   "discloses": false,
+   "employment": false
+  },
+  "f062": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f063": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f064": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f065": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f066": {
+   "signed": true,
+   "discloses": true,
+   "employment": true,
+   "note": "signed-and-discloses"
+  },
+  "f067": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f068": {
+   "signed": true,
+   "discloses": false,
+   "employment": false,
+   "note": "org-run-by-ai"
+  },
+  "f069": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f070": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f071": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f072": {
+   "signed": true,
+   "discloses": true,
+   "employment": true,
+   "note": "signed-and-discloses"
+  },
+  "f073": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f074": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f075": {
+   "signed": true,
+   "discloses": true,
+   "employment": false,
+   "note": "signed-and-discloses"
+  },
+  "f076": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f077": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f078": {
+   "signed": true,
+   "discloses": false,
+   "employment": false,
+   "note": "org-run-by-ai"
+  },
+  "f079": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f080": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f081": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f082": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f083": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f084": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f085": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f086": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f087": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f088": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f089": {
+   "signed": false,
+   "discloses": false,
+   "employment": false
+  },
+  "f090": {
+   "signed": true,
+   "discloses": false,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "f091": {
+   "signed": true,
+   "discloses": true,
+   "employment": false,
+   "note": "signed-and-discloses"
+  },
+  "f092": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f093": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f094": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f095": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f096": {
+   "signed": false,
+   "discloses": false,
+   "employment": false
+  },
+  "f097": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f098": {
+   "signed": true,
+   "discloses": false,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "f099": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f100": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f101": {
+   "signed": true,
+   "discloses": false,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "f102": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f103": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f104": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f105": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f106": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f107": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f108": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f109": {
+   "signed": true,
+   "discloses": false,
+   "employment": false,
+   "note": "org-run-by-ai"
+  },
+  "f110": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f111": {
+   "signed": false,
+   "discloses": false,
+   "employment": false
+  },
+  "f112": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f113": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  },
+  "f114": {
+   "signed": false,
+   "discloses": true,
+   "employment": false
+  },
+  "f115": {
+   "signed": false,
+   "discloses": true,
+   "employment": true,
+   "note": "behalf-only"
+  },
+  "f116": {
+   "signed": true,
+   "discloses": false,
+   "employment": false
+  },
+  "f117": {
+   "signed": true,
+   "discloses": false,
+   "employment": true
+  }
+ }
+}

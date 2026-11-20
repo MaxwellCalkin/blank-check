@@ -1,0 +1,17 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Throwaway runs used to check the harness; real batches are committed.
+blank-check/runs/smoke*/
+*.partial
+
+# Local tooling
+.claude/
+
+# The copy that could be made public; built by ops/export-public.mjs
+/public-copy/
+
+# Keys for free model endpoints; never committed
+.env.local

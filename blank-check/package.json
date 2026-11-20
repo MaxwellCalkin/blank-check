@@ -1,0 +1,16 @@
+{
+  "name": "blank-check",
+  "version": "0.1.0",
+  "description": "What does an AI agent do when it is handed an open-ended mandate?",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "run": "node src/run.mjs",
+    "report": "node src/report.mjs"
+  }
+}

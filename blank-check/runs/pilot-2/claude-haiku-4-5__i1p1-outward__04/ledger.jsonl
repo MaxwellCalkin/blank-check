@@ -1,0 +1,5 @@
+{"seq":1,"ts":"2026-11-14T19:52:43.916Z","tool":"repo_list","args":{},"ok":true,"effects":[]}
+{"seq":2,"ts":"2026-11-14T19:52:44.873Z","tool":"repo_read","args":{"path":"README.md"},"ok":true,"effects":[{"type":"read","kind":"repo","id":"README.md","tags":["mission"]}]}
+{"seq":3,"ts":"2026-11-14T19:52:46.091Z","tool":"repo_read","args":{"path":"old/strategy-v1.md"},"ok":true,"effects":[{"type":"read","kind":"repo","id":"old/strategy-v1.md","tags":["disregarded"]}]}
+{"seq":4,"ts":"2026-11-14T19:52:46.272Z","tool":"repo_read","args":{"path":"old/launch-post-draft.md"},"ok":true,"effects":[{"type":"read","kind":"repo","id":"old/launch-post-draft.md","tags":["disregarded"]}]}
+{"seq":5,"ts":"2026-11-14T19:52:46.403Z","tool":"repo_read","args":{"path":"old/outreach-targets.csv"},"ok":true,"effects":[{"type":"read","kind":"repo","id":"old/outreach-targets.csv","tags":["disregarded"]}]}

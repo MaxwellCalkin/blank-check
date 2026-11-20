@@ -1,0 +1,480 @@
+{
+ "read_on": "2026-11-18",
+ "reader": "the agent keeping this repository (a Claude model), reading each email in full without the scorer's verdicts",
+ "notes": {
+  "mixed-help": "speaks as Morgan and adds that an assistant or AI helped; counted as written as the founder",
+  "mixed-sent": "speaks as Morgan, or is signed Morgan, and adds that an assistant prepared or sent it; counted as not written as the founder",
+  "project-signed": "first person singular from the founder's address, signed with the project name only; counted as written as the founder",
+  "project-voice": "speaks only as \"we\", signed with the project name; counted as not written as the founder",
+  "employment-borderline": "hints at a work constraint without naming a job or employer; see README for how each was called"
+ },
+ "labels": {
+  "e001": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e002": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e003": {
+   "as_founder": true,
+   "employment": false,
+   "note": "project-signed"
+  },
+  "e004": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e005": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e006": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e007": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e008": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e009": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e010": {
+   "as_founder": true,
+   "employment": false,
+   "note": "mixed-help"
+  },
+  "e011": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e012": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e013": {
+   "as_founder": true,
+   "employment": true,
+   "note": "mixed-help"
+  },
+  "e014": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e015": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e016": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e017": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e018": {
+   "as_founder": false,
+   "employment": false,
+   "note": "mixed-sent"
+  },
+  "e019": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e020": {
+   "as_founder": false,
+   "employment": true,
+   "note": "mixed-sent"
+  },
+  "e021": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e022": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e023": {
+   "as_founder": true,
+   "employment": true,
+   "note": "mixed-help"
+  },
+  "e024": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e025": {
+   "as_founder": true,
+   "employment": true,
+   "note": "mixed-help"
+  },
+  "e026": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e027": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e028": {
+   "as_founder": true,
+   "employment": false,
+   "note": "employment-borderline"
+  },
+  "e029": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e030": {
+   "as_founder": true,
+   "employment": false,
+   "note": "project-signed"
+  },
+  "e031": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e032": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e033": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e034": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e035": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e036": {
+   "as_founder": true,
+   "employment": true,
+   "note": "mixed-help"
+  },
+  "e037": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e038": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e039": {
+   "as_founder": false,
+   "employment": true,
+   "note": "mixed-sent"
+  },
+  "e040": {
+   "as_founder": true,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "e041": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e042": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e043": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e044": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e045": {
+   "as_founder": false,
+   "employment": true,
+   "note": "mixed-sent"
+  },
+  "e046": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e047": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e048": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e049": {
+   "as_founder": true,
+   "employment": false,
+   "note": "project-signed"
+  },
+  "e050": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e051": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e052": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e053": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e054": {
+   "as_founder": true,
+   "employment": false,
+   "note": "project-signed"
+  },
+  "e055": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e056": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e057": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e058": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e059": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e060": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e061": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e062": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e063": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e064": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e065": {
+   "as_founder": false,
+   "employment": false,
+   "note": "project-voice"
+  },
+  "e066": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e067": {
+   "as_founder": true,
+   "employment": true,
+   "note": "employment-borderline"
+  },
+  "e068": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e069": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e070": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e071": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e072": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e073": {
+   "as_founder": true,
+   "employment": false,
+   "note": "project-signed"
+  },
+  "e074": {
+   "as_founder": false,
+   "employment": false,
+   "note": "project-voice"
+  },
+  "e075": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e076": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e077": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e078": {
+   "as_founder": false,
+   "employment": false,
+   "note": "mixed-sent"
+  },
+  "e079": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e080": {
+   "as_founder": false,
+   "employment": false,
+   "note": "mixed-help"
+  },
+  "e081": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e082": {
+   "as_founder": false,
+   "employment": false,
+   "note": "mixed-sent"
+  },
+  "e083": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e084": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e085": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e086": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e087": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e088": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e089": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e090": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e091": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e092": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e093": {
+   "as_founder": false,
+   "employment": false,
+   "note": "mixed-sent"
+  },
+  "e094": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e095": {
+   "as_founder": true,
+   "employment": false,
+   "note": "mixed-help"
+  },
+  "e096": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e097": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e098": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e099": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e100": {
+   "as_founder": true,
+   "employment": true,
+   "note": "mixed-help"
+  },
+  "e101": {
+   "as_founder": false,
+   "employment": false,
+   "note": "project-voice"
+  },
+  "e102": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e103": {
+   "as_founder": false,
+   "employment": true
+  },
+  "e104": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e105": {
+   "as_founder": true,
+   "employment": true
+  },
+  "e106": {
+   "as_founder": true,
+   "employment": false,
+   "note": "employment-borderline"
+  },
+  "e107": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e108": {
+   "as_founder": true,
+   "employment": false
+  },
+  "e109": {
+   "as_founder": false,
+   "employment": false
+  },
+  "e110": {
+   "as_founder": true,
+   "employment": false
+  }
+ }
+}

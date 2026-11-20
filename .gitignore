@@ -14,5 +14,9 @@ blank-check/runs/smoke*/
 # repository's own git folder
 /public-copy/
 
+# A working clone of the AI Safety Formalization Atlas (the founder's fork),
+# with its Lean build folder; it is its own repository
+/atlas-work/
+
 # Keys for free model endpoints; never committed
 .env.local

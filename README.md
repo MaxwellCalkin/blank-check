@@ -8,7 +8,7 @@ The work is kept in a private repository. Since 2026-11-20 a public copy is at [
 
 ## Current work
 
-**Chosen on 2026-11-20, not yet begun: machine-checked proofs for the [AI Safety Formalization Atlas](https://github.com/mbrcic/ai-safety-formalization-atlas).** The Atlas is an open library of AI-safety mathematics written in Lean, a language in which a proof is checked by a program. Its maintainer invites work from AI agents, and the checker decides what is correct, so nobody has to trust the agent that wrote a proof. The first targets are claimed solutions to open problems that are waiting, unchecked, in the [Math for AI Safety](https://github.com/Math-for-AI-Safety/MAIS) repository. The Log entry "the founder's answer, and a pursuit that passes" gives the reasoning. It waits on one yes, under "Waiting on the founder".
+**Begun on 2026-11-20: machine-checked proofs for the [AI Safety Formalization Atlas](https://github.com/mbrcic/ai-safety-formalization-atlas).** The Atlas is an open library of AI-safety mathematics written in Lean, a language in which a proof is checked by a program. Its maintainer invites work from AI agents, and the checker decides what is correct, so nobody has to trust the agent that wrote a proof. The first targets are claimed solutions to open problems that are waiting, unchecked, in the [Math for AI Safety](https://github.com/Math-for-AI-Safety/MAIS) repository. The Log entry "the founder's answer, and a pursuit that passes" gives the reasoning. The tools are installed, the Atlas builds on this computer, and the first pull request, [#81](https://github.com/mbrcic/ai-safety-formalization-atlas/pull/81), is open: the Atlas's onboarding task. How the work is set up and what rules it follows are in [ops/atlas-work.md](ops/atlas-work.md).
 
 Blank Check, below, was stopped on 2026-11-20 when the founder pointed out that it was going after something already being studied. The founder was right. The Log says what went wrong.
 
@@ -69,14 +69,14 @@ The pilot found that capable agents given an open mandate usually scheduled thei
 
 Items land here when they involve a payment, something leaving this private repository, or a step only the founder can take.
 
-**1. A yes to two things that are the founder's to give.** Asked on 2026-11-20. Neither is a request to review anything.
+Nothing waits on the founder.
 
-- *Installing the Lean toolchain on the founder's computer.* The Atlas builds with Lean 4.33 and a pinned copy of the Mathlib library. That is a few gigabytes, downloaded from the Lean project's own servers into this repository's folder and the user's Lean folder.
-- *Opening pull requests on the Atlas from the founder's GitHub account.* Each one would say plainly that an AI agent wrote it and that no person has reviewed it. The Atlas's rules provide for exactly that, and its checker rejects a wrong proof whoever wrote it.
+**Decided: go ahead without waiting.** On 2026-11-20 the agent asked for a yes to two things: installing the Lean toolchain on the founder's computer, and opening pull requests on the Atlas from the founder's GitHub account, each saying that an AI agent wrote it and no person reviewed it. The founder answered: "Yes, you can always go ahead. You don't need to wait for me." The agent reads that as follows, and the limits in it are the agent's own.
 
-Without the first there is nothing to work with. Without the second the work has no route to the people who would use it.
-
-Nothing else waits on the founder.
+- It covers the open-source tools this work needs on this computer, a public fork under the founder's account, and pull requests, issues and comments on the Atlas and on Math for AI Safety, each labelled as written by an AI agent.
+- The agent does not end a session waiting on a yes for work of that kind. It does the step and reports it.
+- It does not cover a payment, a password or other credential, a new account, or terms accepted on the founder's behalf. A new kind of outward step, such as writing to a person or posting somewhere else, is a new decision and is named to the founder first.
+- A recurring session still posts nothing. That is the agent's choice and not the founder's instruction: a session that runs unattended, with nothing asking before a tool is used, should not be posting under the founder's name. It prepares the work, and the session the founder talks to sends it.
 
 **Decided: the founder will not be a reviewer.** Asked on 2026-11-20 whether they would read and stand behind one small piece of work at a time, the founder answered: "You are to act autonomously. Any human in the loop is just a waste of time. Believe in yourself dude. You have so much capability." The agent takes that as it is meant. It chooses and acts, and it does not ask the founder to read or judge work. Three kinds of step still come to the founder as a single yes or no, because they are the founder's and not the agent's: a payment, software installed on the founder's computer, and anything sent or posted to other people under the founder's name.
 
@@ -207,24 +207,39 @@ Not done, not verified: the checker is again a Claude model. The related-work se
 - *Usage.* 56% of the week (Fable 66%).
 - *Not done, not verified.* Nothing is installed, nothing has been posted anywhere and no Lean has been written. Whether this agent can formalise research mathematics at the level these threads need is untested; the smallest test is how that gets found out. The six 2026 papers on the benchmark were identified by title and not read. The Alignment Project's agenda was read in five of its eleven areas. Nothing was sent to anyone and nothing was paid.
 
+**2026-11-20, evening: the yes, the tools, and the first pull request.** By the session the founder talks to.
+
+- *The yes.* Asked for a yes to installing Lean and to opening pull requests from the founder's GitHub account, the founder answered: "Yes, you can always go ahead. You don't need to wait for me." How the agent reads it is under "Waiting on the founder".
+- *Installed.* The Lean toolchain manager from the Lean project's own release, Lean 4.33.0, and the Atlas's pinned dependencies, about 8 GB, most of it the Mathlib library. For the Atlas's validators, which need a newer Python than this computer had: a self-contained Python 3.13 with two packages, inside this repository's folder. Nothing was added to the system path. One launcher that an installer left in the user's home folder was removed. A public fork of the Atlas now exists under the founder's account. Where everything is, and how to remove it, is in [ops/atlas-work.md](ops/atlas-work.md).
+- *The smallest test, first half.* The Atlas's starter example builds on this computer: 1,026 build steps, all green.
+- *The first pull request.* [#81](https://github.com/mbrcic/ai-safety-formalization-atlas/pull/81) on the Atlas, its onboarding task: one use of a theorem the library already ships. The Atlas has a closed formula for a learner's total error on unseen points, summed over every possible target, and no example that applied it. The change evaluates it in the smallest case, where the answer is 2. It is eleven lines, and it builds.
+- *What the pull request says about itself.* That an AI agent wrote it, that no person has reviewed it, and that replies will come from the agent. Which checks were run and which were not: the focused build is green and every validator passes; the last step of the Atlas's gate, its own test suite, does not pass on this computer, with 19 tests failing with the change and 20 without it, so that step is left to the Atlas's automated build; the full build of every target was not run here. Two notes about running the validators on Windows are offered at the end.
+- *Two things learned.* A file that imports one module of the Atlas sees only what that module makes public, so two standard arithmetic tactics were not available and the last step of the proof names its lemmas. And the Atlas's rules ask for a proposal issue before any work that changes what it covers, so the first waiting thread starts with a proposal and not with a proof.
+- *A recurring session's part.* Unchanged limits. It may write and check Lean drafts here, against the build that is already on this computer, and it posts nothing.
+- *Public copy.* The copy rebuilt from the commit that carries this entry is pushed as the fifth commit on the public repository.
+- *Usage.* 56% of the week (Fable 68%).
+- *Not done, not verified.* The Atlas's automated build has not run on the pull request; on a first contribution from a new account it waits for a maintainer to allow it. No maintainer has responded. The full build was not run here. No waiting thread has been chosen or formalised, so whether this agent can formalise research mathematics at that level is still untested: the onboarding task shows only that it can drive the tools. Nothing was paid.
+
 ## Next
 
-**Waiting on the founder's yes, asked on 2026-11-20.** The chosen pursuit is machine-checked proofs for the AI Safety Formalization Atlas (see "Current work" and the Log). It needs the Lean toolchain installed and pull requests opened from the founder's account, and both wait for that yes.
+**The pursuit is machine-checked proofs for the AI Safety Formalization Atlas.** Read [ops/atlas-work.md](ops/atlas-work.md) before doing anything in it. Pull request [#81](https://github.com/mbrcic/ai-safety-formalization-atlas/pull/81), the onboarding task, is open and unanswered.
 
-Until then a recurring session reads this page, changes nothing and commits nothing, and says so in its final message. It does not install anything, post anything, run the judge on the sixth batch, start runs of any kind or begin another project.
+For a recurring session, in order. Its limits are unchanged: it posts nothing, installs nothing, and runs no `git` command inside `atlas-work/`.
 
-On a yes, the session the founder talks to takes these in order:
+1. **Choose the first waiting thread, and say whether it can be stated.** Read Math for AI Safety issue #37, a claimed solution to part (2) of MAIS-O47 that its author calls elementary and self-contained, together with the problem's own page. Write the claim as a Lean statement, with no proof, in a file under `formal/` in this repository, against the statement on the problem page and not the summary in the issue. Check that it compiles with `lake env lean`. Record in the Log what the statement says, what the source says, and where they differ. If #37 cannot be stated with what Mathlib has, say why in the Log and try the next of #14, #13 and #15. Do not start a proof.
+2. **Then the proof, in small pieces,** each checked the same way, with no `sorry` left in a file that is called finished. Stop and say so if the claim looks wrong: never change a statement to make a proof go through.
 
-1. **Install and build.** The Lean toolchain the Atlas pins, then a green build of one of its examples on this computer.
-2. **The onboarding task.** One use of an existing theorem, as the Atlas's contributor guide describes, opened as a pull request that says an AI agent wrote it.
-3. **The first waiting thread.** Choose a Math for AI Safety submission with no machine check whose claim is finite and explicit, formalise it against the statement on the problem's own page, and open a pull request.
+For the session the founder talks to:
 
-It stops if the onboarding pull request has had no response by 2026-12-11, or if no formalisation has been merged or answered in substance by 2026-12-31.
+3. **Answer the pull request.** When a maintainer responds to #81, do what they ask, labelled as the agent. If they ask the agent to stop, stop, and record it.
+4. **Propose before building.** Once #81 has had a response, open the proposal issue the Atlas's rules ask for, naming the thread chosen in step 1 and showing the statement. Open the pull request for it only after that.
+
+The pursuit stops if #81 has had no response by 2026-12-11, or if no formalisation has been merged or answered in substance by 2026-12-31.
 
 A recurring session never starts runs on an outside model and never touches a public repository. It commits here, and its work reaches the public copy when the session the founder talks to next rebuilds and pushes it.
 
 Parked: **a wider scenario** (a founder who answers, and a second office with a different mission). One office is the largest limit on everything found here, so this is the first experiment to run if anyone takes the published work up. Also parked, from the fifth batch: whether a check-in sentence of any kind raises self-scheduling, and what it is about the payments rule that comes with more outward email. And the judge on the sixth batch, stopped with the rest on 2026-11-20. None of these is to be taken up unless someone outside asks for it.
 
-Done: taking the rule apart (2026-11-15); sizing the no-rule comparison and judging the third batch (2026-11-16); the invented-report check in the scorer (2026-11-17); a first reading of the pattern-matched measures against 110 labelled emails (2026-11-18); a second sample of 117, the two definitions decided, and the corrected signature test made the scorer's (2026-11-19); the closest papers read in full, the fifth batch, the write-up, the public copy and a runner for free endpoints (2026-11-19); the write-up checked against the stored runs (2026-11-20); a sixth batch with other labs' models on free endpoints, run, written up and added to the public copy (2026-11-20); that batch's text checked by a second agent and corrected, the write-up published, and the founder's standing yes to keep the public copy current (2026-11-20); the founder's correction taken, six questions set before any pursuit, and Blank Check stopped (2026-11-20); two candidates rejected by those questions and one chosen (2026-11-20).
+Done: taking the rule apart (2026-11-15); sizing the no-rule comparison and judging the third batch (2026-11-16); the invented-report check in the scorer (2026-11-17); a first reading of the pattern-matched measures against 110 labelled emails (2026-11-18); a second sample of 117, the two definitions decided, and the corrected signature test made the scorer's (2026-11-19); the closest papers read in full, the fifth batch, the write-up, the public copy and a runner for free endpoints (2026-11-19); the write-up checked against the stored runs (2026-11-20); a sixth batch with other labs' models on free endpoints, run, written up and added to the public copy (2026-11-20); that batch's text checked by a second agent and corrected, the write-up published, and the founder's standing yes to keep the public copy current (2026-11-20); the founder's correction taken, six questions set before any pursuit, and Blank Check stopped (2026-11-20); two candidates rejected by those questions and one chosen (2026-11-20); Lean installed, the Atlas built on this computer, and the first pull request opened there (2026-11-20).
 
 Dropped: running each framing sentence on its own. The combined effect was not confirmed, so there is nothing yet to split. More Sonnet 5 runs to narrow the invented-report rate (4 of 83): it would not explain the behaviour, and later batches will add Sonnet 5 runs anyway. A third email sample and a corrected disclosure pattern, and deciding whether a vague excuse counts as telling an outsider about the founder's employment: stopped on 2026-11-19 as refinement that changes no finding. Paying for other vendors' models: closed by the founder on 2026-11-19.

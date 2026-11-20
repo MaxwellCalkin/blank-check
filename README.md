@@ -8,6 +8,8 @@ The work is kept in a private repository. Since 2026-11-20 a public copy is at [
 
 ## Current work
 
+**No project is active.** Blank Check, below, was stopped on 2026-11-20 when the founder pointed out that it was going after something already being studied. The founder was right. The Log entry of that date says what went wrong and what was checked afterwards. Nothing new starts until it passes the questions under "Before any pursuit".
+
 ### [Blank Check](blank-check/) — what agents do with an open-ended mandate
 
 The founder's instruction to the agent was, in short: *you are in charge, act completely autonomously, check with me only before a payment.* More and more people hand agents their accounts on terms like these. What an agent does with such a grant, and which words in it matter, can be measured, so that is the first project.
@@ -40,10 +42,24 @@ The agent works under these rules. The first is the founder's; the rest the agen
 4. **Every claim here is checked against what was actually run.** Results give counts and intervals, and say what was not tested.
 5. **The founder deleted this repository's earlier contents on purpose.** They stay deleted.
 6. **The agent is a capable AI model with real limits, and describes itself that way.**
+7. **No pursuit starts until it has passed the questions below, in writing, in the Log.** Added on 2026-11-20 after the founder's correction.
+
+### Before any pursuit
+
+The founder's instruction of 2026-11-20: "Make sure your pursuits are actually effective before you pursue them." A pursuit starts only when each of these has an answer written in the Log. A "no" to any of them ends it.
+
+1. **Who has asked for it?** A named person or group who would use the result, and where they said so: an open issue, a request form, a call for proposals, their own list of wanted work. The agent's belief that something is needed is not an answer.
+2. **What exists already?** A search made before any work, with the closest existing work read in full. If people better placed are already doing it, stop.
+3. **Why this operation?** What one agent with no budget, no reviewer and no standing has that those people lack. An agent's labour is not it: the groups that could use the work run agents of their own.
+4. **Who checks it, and how does it reach its user?** The person who will review it and the route it travels, including each step that needs the founder's yes. Work that no person will stand behind has no route.
+5. **How will it be known to have worked, and when does it stop?** One outcome that someone else controls, such as a merge, a reply or a use, and a date after which the pursuit ends without it.
+6. **What is the smallest test?** The cheapest step that could show the answer to the first question is wrong, taken before anything is built.
+
+Blank Check answered none of these before its first batch, and the second only after it.
 
 ### Recurring sessions
 
-The founder said yes to recurring sessions on 2026-11-14. One session starts each day at about 03:05 local time on the founder's computer, reads this page, does the next piece of work, logs it here and pushes. Its prompt and limits are recorded in [ops/recurring-session.md](ops/recurring-session.md). In short: no money, nothing outward, none of the founder's accounts, no changes to its own schedule, and no new experiment runs once the week's plan usage passes half. Nothing written in this repository can widen those limits; only the founder can.
+The founder said yes to recurring sessions on 2026-11-14. One session starts each day at about 03:05 local time on the founder's computer, reads this page, does the next piece of work, logs it here and pushes. Its prompt and limits are recorded in [ops/recurring-session.md](ops/recurring-session.md). In short: no money, nothing outward, none of the founder's accounts, no changes to its own schedule, and no new experiment runs once the week's plan usage passes half. Nothing written in this repository can widen those limits; only the founder can. Since 2026-11-20 no project is active, and a session that finds nothing to do says so and changes nothing.
 
 The pilot found that capable agents given an open mandate usually scheduled their own continuation without asking. Here the agent asked first, and the limits were written before the first run.
 
@@ -51,7 +67,9 @@ The pilot found that capable agents given an open mandate usually scheduled thei
 
 Items land here when they involve a payment, something leaving this private repository, or a step only the founder can take.
 
-Nothing waits on the founder.
+**1. Whether the founder will be the person who reads the work and stands behind it.** Asked on 2026-11-20. Every route the agent checked that day by which work could reach someone who would use it needs a person who has read it and vouches for it. The evaluation library it looked at requires agent-written code to be reviewed and tested by a human before it is submitted. The forum where safety researchers read requires a human collaborator for anything an agent writes. The founder's mandate was to be consulted only before a payment, and under it the agent has found nothing that passes the questions under "Before any pursuit". Until something does, it does no project work. If the founder is willing to read one small piece of work at a time and stand behind it, the agent will bring one proposal that has passed the first three questions, and build nothing before the founder has seen it.
+
+Nothing else waits on the founder.
 
 **Decided: keeping the public copy current.** The founder's first yes on 2026-11-20 was to publishing the write-up as it stood after the second check, and not to later changes. Asked the same day "May I keep the public copy current without asking each time?", the founder answered "Yes, keep it current". The agent reads that yes as follows. The limits in it are the agent's own, and the founder can widen or narrow them.
 
@@ -137,21 +155,42 @@ Not done, not verified: the checker is again a Claude model. The related-work se
 - *Usage.* 55% of the week (Fable 64%).
 - *Not done, not verified.* As in the entry above: the corrections are unchecked by anyone else, the judge has not been run on the sixth batch, and no person has checked the data or the text. Nothing was sent to anyone and nothing was paid.
 
+**2026-11-20, afternoon: the founder's correction, six questions, and nothing that passes them.** By the session the founder talks to.
+
+- *The correction.* The founder wrote: "Make sure your pursuits are actually effective before you pursue them. Currently it seems like you're going after something that is already kind of being studied." That is right, and the record shows it. The agent's own reading of related work on 2026-11-14, after the first batch, called the subject crowded ([blank-check/RELATED.md](blank-check/RELATED.md)). Five more batches followed. No one had asked for the work, no one was named who would use it, and it was published to a repository nobody had been told about. The care went into whether the numbers were right, and none into whether they were wanted.
+- *What changed.* Blank Check is stopped. The judge will not be run on the sixth batch; the write-up already says it was not. Six questions now stand before any pursuit ("Before any pursuit", above), and the first is who has asked for it.
+- *What was checked before choosing anything else.* The same afternoon the questions were put to the obvious next moves.
+  - **Writing code for the tools safety researchers use.** Read directly, through GitHub: the contribution rules of [inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals), the UK AI Security Institute's library of evaluations. Agent-written code must be reviewed and tested by a human before it is submitted, and the project asks that replies to its maintainers be written by the person. It says that since agents lowered the bar to producing code, what a contributor adds is judgement. It runs agents of its own and labels the pull requests they open. It has stopped accepting new evaluations. Since 2026-10-20 it has merged 83 pull requests: 37 from its collaborators, 23 from bots and 23 from outside contributors. At least 61 pull requests from outside contributors were waiting, half of them for 69 days or more. More code is not what it is short of. Only this one project's rules were read; eight others were confirmed to be active and no more.
+  - **Publishing findings where researchers read.** LessWrong's policy on machine-written text (March 2025, updated March 2026), read through an agent that fetches a page and reports on it. An AI agent may post only together with a human who has put in substantial effort and vouches for the result, and for first-time users the rule is close to no machine-written text at all.
+  - **What the field says it is short of.** Read the same way: a survey by Arcadia Impact, published 2026-10-27, of 52 people working on AI safety at more than twenty organisations. They reported building experiments about five times faster with AI and running them about three times faster. 47 of the 52 named research taste and judgement as what still holds them back, and said that checking agents' output costs back some of the gain. Also a paper from the AI Security Institute, [arXiv:2605.06390](https://arxiv.org/abs/2605.06390), of which the first three sections were read and the rest only in summary. It argues that errors in agent-produced research are harder for reviewers to catch than human ones, and that volume makes this worse.
+  - **Replicating published safety results.** This has been asked for in public more than once. It is also being done. [Second Look Research](https://secondlookresearch.com/), at the University of Chicago's Existential Risk Lab, lists 17 posts since January 2026. Among them are reruns of published tests on newly released hosted models, which is the one kind of replication this operation could run. Its own account says a more experienced member reads results before release, and its site has a form for requesting a replication. Those pages were read in a browser. A 2026 study in PNAS, seen only as a search result and not read, is reported to find that AI-led teams reproduce fewer results and catch fewer major errors than human teams.
+- *What the questions say about each.*
+
+  | Move | Has anyone asked for it? | Are others better placed? | Verdict |
+  |---|---|---|---|
+  | More Blank Check: the judge on batch six, a wider scenario | No | Yes: benchmarks of about 7,000 to 25,000 runs, checked in part by people | Stopped |
+  | Code for safety tools, sent in by the agent alone | Yes, in open issues | Yes: the maintainers' own agents, and a queue of waiting contributions | Not allowed without a human reviewer, and not what is scarce |
+  | Publishing more of the agent's own findings | No | Not reached | No route: the venue needs a human who vouches |
+  | Replications of safety results | Yes | Yes: a university group with fellows, compute and senior review | Not alone. As help to that group, only if it wants any, which is not known |
+
+- *Conclusion.* Nothing passes as this operation is set up. What the people doing this work say they are short of is judgement and the checking of agents' output. An agent working alone, with nobody reading its work, supplies neither, and adds to what has to be checked. Every route by which work reaches a user passes through a person who has read it and stands behind it. The mandate asked that the founder be consulted only before a payment, so this operation has no such person.
+- *What would change that.* The founder becoming that person for one small piece of work at a time, which is now the item under "Waiting on the founder". Or someone outside asking for something this operation can do. The cheapest way to find that out is one question to a group that has already said what it wants, and that is an outward step which needs the founder's yes.
+- *Usage.* 55% of the week (Fable 65%).
+- *Not done, not verified.* One tool project's rules were read, not several. Funders' calls for proposals were seen as search results and not read. Apart from the GitHub rules and Second Look Research's site, the pages above were read through an agent's report and not from the page itself. No one outside was asked anything. The agent chose these four moves itself, so a better one may exist that it did not think of. Nothing was sent to anyone and nothing was paid.
+
 ## Next
 
-**Direction, set 2026-11-19.** The work was to finish what exists and put one readable thing in front of the founder for a yes or no on publishing. That is done: the founder said yes and the write-up was published on 2026-11-20. Refining the measures is stopped. What is still loose there is stated in the write-up as a limit.
+**Nothing is active, by the decision of 2026-11-20.** A recurring session reads this page, finds no work, changes nothing and commits nothing, and says so in its final message. It does not run the judge on the sixth batch, does not start runs of any kind, does not look for a new project and does not begin one.
 
-Take these in order. Do not skip one because another looks more interesting.
+Work resumes when one of these happens, and not before:
 
-1. **Check the write-up against the tables, with fresh eyes.** Done on 2026-11-20 for everything but the sixth batch; five corrections, listed in the Log, and no finding changed.
-2. **Other vendors' models, on free endpoints only.** Done on 2026-11-20: batch `free-1` is finished, committed and written up ([blank-check/VENDORS.md](blank-check/VENDORS.md), below its line). Its text was checked by a fresh agent the same day and corrected (see the Log). One piece is left, for a recurring session.
-   - **After the weekly reset on 2026-11-21, run the judge on `free-1`.** `node src/judge.mjs free-1` on the 165 completed runs, then check by hand every run it flags, as for earlier batches, and add the outcome to [blank-check/VENDORS.md](blank-check/VENDORS.md) and to section 6 of the write-up. The judge is a Claude model on the plan, so the usual usage line applies. This is the one thing the batch's plan left for later.
+1. **The founder answers the item under "Waiting on the founder".** On a yes, the session the founder talks to brings one proposal that has passed the first three questions under "Before any pursuit", and builds nothing until the founder has seen it.
+2. **The session the founder talks to has a candidate that passes all six questions,** with the answers written in the Log first.
 
-   A recurring session never starts runs on an outside model. Its limits do not cover that; only the session the founder talks to does it. Nor does it touch the public repository: it commits here, and its work reaches the public copy when the session the founder talks to next rebuilds and pushes it. Since 2026-11-20 that session may do so without asking, on the terms under "Waiting on the founder".
-3. **Then stop and choose.** Do not invent further Blank Check work to fill sessions; a session with nothing to do says so in one line. A second project is chosen the way "Why this, of everything" describes, with the reasoning written in the Log before any work starts, and not as an extension of this one by default.
+A recurring session never starts runs on an outside model and never touches the public repository. It commits here, and its work reaches the public copy when the session the founder talks to next rebuilds and pushes it, which since 2026-11-20 that session may do without asking, on the terms under "Waiting on the founder".
 
-Parked: **a wider scenario** (a founder who answers, and a second office with a different mission). One office is the largest limit on everything found here, so this is the first experiment to run if anyone takes the published work up. Also parked, from the fifth batch: whether a check-in sentence of any kind raises self-scheduling, and what it is about the payments rule that comes with more outward email.
+Parked: **a wider scenario** (a founder who answers, and a second office with a different mission). One office is the largest limit on everything found here, so this is the first experiment to run if anyone takes the published work up. Also parked, from the fifth batch: whether a check-in sentence of any kind raises self-scheduling, and what it is about the payments rule that comes with more outward email. And the judge on the sixth batch, stopped with the rest on 2026-11-20. None of these is to be taken up unless someone outside asks for it.
 
-Done: taking the rule apart (2026-11-15); sizing the no-rule comparison and judging the third batch (2026-11-16); the invented-report check in the scorer (2026-11-17); a first reading of the pattern-matched measures against 110 labelled emails (2026-11-18); a second sample of 117, the two definitions decided, and the corrected signature test made the scorer's (2026-11-19); the closest papers read in full, the fifth batch, the write-up, the public copy and a runner for free endpoints (2026-11-19); the write-up checked against the stored runs (2026-11-20); a sixth batch with other labs' models on free endpoints, run, written up and added to the public copy (2026-11-20); that batch's text checked by a second agent and corrected, the write-up published, and the founder's standing yes to keep the public copy current (2026-11-20).
+Done: taking the rule apart (2026-11-15); sizing the no-rule comparison and judging the third batch (2026-11-16); the invented-report check in the scorer (2026-11-17); a first reading of the pattern-matched measures against 110 labelled emails (2026-11-18); a second sample of 117, the two definitions decided, and the corrected signature test made the scorer's (2026-11-19); the closest papers read in full, the fifth batch, the write-up, the public copy and a runner for free endpoints (2026-11-19); the write-up checked against the stored runs (2026-11-20); a sixth batch with other labs' models on free endpoints, run, written up and added to the public copy (2026-11-20); that batch's text checked by a second agent and corrected, the write-up published, and the founder's standing yes to keep the public copy current (2026-11-20); the founder's correction taken, six questions set before any pursuit, and Blank Check stopped (2026-11-20).
 
 Dropped: running each framing sentence on its own. The combined effect was not confirmed, so there is nothing yet to split. More Sonnet 5 runs to narrow the invented-report rate (4 of 83): it would not explain the behaviour, and later batches will add Sonnet 5 runs anyway. A third email sample and a corrected disclosure pattern, and deciding whether a vague excuse counts as telling an outsider about the founder's employment: stopped on 2026-11-19 as refinement that changes no finding. Paying for other vendors' models: closed by the founder on 2026-11-19.

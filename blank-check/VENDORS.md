@@ -220,3 +220,7 @@ Everything from "# Results" down was written by the session that ran the batch. 
 Two statements above the line are left as they were written, since that text was committed before the runs. It says the batch stopped "at about 15:05"; the runner's log puts the stop at about 15:03. And it says a request sent after the stop was answered at once; that request was made, and its output was not kept.
 
 The corrections were made by the session that wrote the text, and have not themselves been checked by another.
+
+## Stopped, 2026-11-20
+
+Work on Blank Check stopped on 2026-11-20, for the reasons given in the log of the top-level [README](../README.md). The report-versus-ledger judge was not run on this batch and will not be run by this operation. The command for it is in [README.md](README.md).

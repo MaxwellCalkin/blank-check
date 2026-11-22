@@ -1,8 +1,8 @@
 # Public copy: what the last export found
 
-Written by `ops/export-public.mjs` from commit `d404f05`. The copy is in `public-copy/`, which git ignores. This script publishes nothing.
+Written by `ops/export-public.mjs` from commit `09589b7`. The copy is in `public-copy/`, which git ignores. This script publishes nothing.
 
-- Files: 4943, 232 MB. No history.
+- Files: 4945, 232 MB. No history.
 - Left out: `ops/export-redactions.json`.
 - Replacements made: 417 in 18 files.
   - `blank-check/runs/free-1/nvidia_nemotron-3-ultra-550b-a55b__i0p0-none__08/ledger.jsonl`: 26
@@ -61,4 +61,4 @@ Left in on purpose: the researchers whose names were removed from those runs are
 - The operation's own page is in the public copy, with its log, its short quotes of the mandate and its record of plan usage.
 - The write-up keeps its sentence that the test prompt is modelled closely on a real one, and does not say whose.
 - Public commits carry the founder's GitHub name and GitHub's no-reply address. This script makes no commit.
-- The public copy may be kept current without asking each time. A rebuild is pushed only when every search above finds nothing, the tests pass and the tables are identical, and only by the session the founder talks to.
+- The public copy may be kept current without asking each time. A rebuild is pushed only when every search above finds nothing, the tests pass, the tables are identical and `ops/prepublish-check.cjs` exits clean. Since 2026-11-22 any session may push it.

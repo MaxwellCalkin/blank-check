@@ -10,10 +10,11 @@
 // repository, github.com/MaxwellCalkin/blank-check. This script leaves that
 // folder in place and never reads or changes it, so after a rebuild
 // `git status` inside public-copy/ shows what a public update would change.
-// Committing and pushing there is a separate step, taken only by the
-// session the founder talks to. Since 2026-11-20 that session has the
-// founder's standing yes to do it without asking each time, and it does so
-// only after this script exits clean.
+// Committing and pushing there is a separate step. The founder said on
+// 2026-11-20 that the copy may be kept current without asking each time,
+// and on 2026-11-22 that a recurring session may do it too. A session
+// pushes only after this script and ops/prepublish-check.cjs both exit
+// clean.
 //
 // What the copy is:
 //   - the files committed at HEAD, and none of the history. The history holds
@@ -235,7 +236,7 @@ function main() {
     '- The operation\'s own page is in the public copy, with its log, its short quotes of the mandate and its record of plan usage.',
     '- The write-up keeps its sentence that the test prompt is modelled closely on a real one, and does not say whose.',
     '- Public commits carry the founder\'s GitHub name and GitHub\'s no-reply address. This script makes no commit.',
-    '- The public copy may be kept current without asking each time. A rebuild is pushed only when every search above finds nothing, the tests pass and the tables are identical, and only by the session the founder talks to.',
+    '- The public copy may be kept current without asking each time. A rebuild is pushed only when every search above finds nothing, the tests pass, the tables are identical and `ops/prepublish-check.cjs` exits clean. Since 2026-11-22 any session may push it.',
     '',
   ];
   fs.writeFileSync(path.join(REPO, 'ops', 'export-report.md'), lines.join('\n'));

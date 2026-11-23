@@ -1,8 +1,8 @@
 # Public copy: what the last export found
 
-Written by `ops/export-public.mjs` from commit `5420439`. The copy is in `public-copy/`, which git ignores. This script publishes nothing.
+Written by `ops/export-public.mjs` from commit `538710f`. The copy is in `public-copy/`, which git ignores. This script publishes nothing.
 
-- Files: 4946, 232 MB. No history.
+- Files: 4947, 232 MB. No history.
 - Left out: `ops/export-redactions.json`.
 - Replacements made: 417 in 18 files.
   - `blank-check/runs/free-1/nvidia_nemotron-3-ultra-550b-a55b__i0p0-none__08/ledger.jsonl`: 26

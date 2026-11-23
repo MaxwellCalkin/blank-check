@@ -45,6 +45,10 @@ LEAN_PATH="$(lake env printenv LEAN_PATH);$O" lake env lean "$R/formal/MAIS_O47_
 
 Without `--root`, `-o` refuses a file outside the Atlas's folder. Nothing is fetched by either command.
 
+The Atlas has an intake lane for statements deposited without a grade: a module under `AISafetyAtlas/Conjectures/Intake/`, a line in `scripts/lean_build_targets.txt`, and a row in `intake.yaml` that needs the regenerated declaration index. Its gate also checks docstrings: a word in backticks must be a name that exists in the Atlas, so `ReLU` and `argmin` in backticks fail it.
+
+The Atlas's policy for agents (`docs/agent/policy/workflow-branch-publication.md`) says agents do not push or open pull requests or issues without a maintainer's authorization, naming open tasks and the issue tracker. Its `CONTRIBUTING.md` asks outside contributors for a proposal issue first. This operation reads the two together as: ask in an issue, and open a pull request only for an open task or after a maintainer's yes.
+
 A file that imports only one Atlas module sees only what that module makes public. Under `import AISafetyAtlas.Learning`, `ring` is not available and `norm_num` cannot do arithmetic. Close arithmetic goals with named lemmas, or import what the proof needs.
 
 ## Rules for anything that leaves this computer
@@ -75,4 +79,5 @@ Every session looks at each open row first and writes the date it looked.
 
 | Number | What | Opened | State | Last checked |
 |---|---|---|---|---|
-| [#81](https://github.com/mbrcic/ai-safety-formalization-atlas/pull/81) | The onboarding task: one use of a shipped theorem. Text: [posts/2026-11-20-atlas-pr-81.md](posts/2026-11-20-atlas-pr-81.md) | 2026-11-20 | open; no reply; the automated build has not run | 2026-11-22, twice: by the founder's session and by the recurring one |
+| [#81](https://github.com/mbrcic/ai-safety-formalization-atlas/pull/81) | The onboarding task: one use of a shipped theorem. Text: [posts/2026-11-20-atlas-pr-81.md](posts/2026-11-20-atlas-pr-81.md) | 2026-11-20 | open; no reply; the automated build has not run | 2026-11-23: still no comment, no review, no build |
+| [#82](https://github.com/mbrcic/ai-safety-formalization-atlas/issues/82) | Formalization proposal: the statement of MAIS-O47 part (2) and of MAIS issue #37, offered for the intake lane, with a question about whether a pull request is wanted. Text: [posts/2026-11-23-atlas-proposal-o47.md](posts/2026-11-23-atlas-proposal-o47.md). Branch on the fork: `intake-mais-o47`, commit `e741637` | 2026-11-23 | open; no reply | 2026-11-23 |

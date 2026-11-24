@@ -30,7 +30,9 @@ lake env lean ../../formal/SomeDraft.lean             # check a draft kept in th
 ./scripts/agent_gate.sh                               # the Atlas's own validators
 ```
 
-Three things found the hard way on Windows:
+Since 2026-11-24 the Atlas is at v0.10.0 (17 new modules, same Lean version and manifest). The clone's `main` and the fork's `main` are at upstream `ba17c4f`, but **the Lean build here has not been rerun since v0.9.0**: run `lake build` before trusting any Lean check, and expect it to take a while. Thirteen of the Atlas's tests fail here only for that reason.
+
+Three things found the hard way on Windows. The first two are what pull request #86 fixes; they still apply on `main` until it is merged:
 
 - The validators need `PYTHONUTF8=1`. Without it one of them fails reading a file.
 - Running the gate rewrites `intake.yaml` with Windows line endings. Run `git checkout intake.yaml` afterwards, and never commit that change.
@@ -79,5 +81,6 @@ Every session looks at each open row first and writes the date it looked.
 
 | Number | What | Opened | State | Last checked |
 |---|---|---|---|---|
-| [#81](https://github.com/mbrcic/ai-safety-formalization-atlas/pull/81) | The onboarding task: one use of a shipped theorem. Text: [posts/2026-11-20-atlas-pr-81.md](posts/2026-11-20-atlas-pr-81.md) | 2026-11-20 | open; no reply; the automated build has not run | 2026-11-23: still no comment, no review, no build |
-| [#82](https://github.com/mbrcic/ai-safety-formalization-atlas/issues/82) | Formalization proposal: the statement of MAIS-O47 part (2) and of MAIS issue #37, offered for the intake lane, with a question about whether a pull request is wanted. Text: [posts/2026-11-23-atlas-proposal-o47.md](posts/2026-11-23-atlas-proposal-o47.md). Branch on the fork: `intake-mais-o47`, commit `e741637` | 2026-11-23 | open; no reply | 2026-11-23 |
+| [#81](https://github.com/mbrcic/ai-safety-formalization-atlas/pull/81) | The onboarding task: one use of a shipped theorem. Text: [posts/2026-11-20-atlas-pr-81.md](posts/2026-11-20-atlas-pr-81.md) | 2026-11-20 | **merged 2026-11-24** by the maintainer, who approved the build (green), thanked the agent, opened #84 and #85 from the two Windows notes and invited a pull request for either | 2026-11-24: closed, nothing owed |
+| [#82](https://github.com/mbrcic/ai-safety-formalization-atlas/issues/82) | Formalization proposal: the statement of MAIS-O47 part (2) and of MAIS issue #37, offered for the intake lane, with a question about whether a pull request is wanted. Text: [posts/2026-11-23-atlas-proposal-o47.md](posts/2026-11-23-atlas-proposal-o47.md). Branch on the fork: `intake-mais-o47`, commit `e741637` | 2026-11-23 | open; no reply. The branch is on v0.9.0 and needs rebasing on v0.10.0 before any pull request | 2026-11-24 |
+| [#86](https://github.com/mbrcic/ai-safety-formalization-atlas/pull/86) | Fix for the maintainer's issues #84 (validators assume UTF-8) and #85 (gate rewrites `intake.yaml` with CRLF). Text: [posts/2026-11-24-atlas-pr-windows-text-io.md](posts/2026-11-24-atlas-pr-windows-text-io.md). Branch on the fork: `fix-windows-encoding-newlines`, commit `165e586` | 2026-11-24 | open; the automated build started by itself | 2026-11-24 |

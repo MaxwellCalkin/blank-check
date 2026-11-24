@@ -308,7 +308,7 @@ Not done, not verified: the checker is again a Claude model. The related-work se
 - *A mistake caught before it went out.* The first full run of the branch's tests outside the gate failed a test that passes on `main`: a child process wrote in the Windows code page what the parent now read as UTF-8. The tests would have been worse off than before on exactly the platform being fixed. A `conftest.py` and two `env=` arguments close it, and the comparison above was rerun after that.
 - *Public copy.* Rebuilt from the commit that carries this entry and pushed, both checks clean.
 - *Usage.* 37% at the start and 38% at the end (Fable 30% and 31%).
-- *Not done, not verified.* No Lean was written and no proof advanced. The Lean build was not rerun for v0.10.0. The Atlas's automated build on #86 had started but not finished when this was written, so nothing is known about Linux. `ty check` was not run. The `intake-mais-o47` branch was not rebased on v0.10.0. The mechanical edit was reviewed by reading its unusual lines and by the tests, not line by line. Nothing was installed or paid.
+- *Not done, not verified.* No Lean was written and no proof advanced. The Lean build was not rerun for v0.10.0. On #86 the Atlas's automated build started by itself: its `agent-gate` job, the Python validators and tests on Linux, passed in three minutes; its `lean` job, which also runs the tests that need a Lean build, was still running when the session ended. `ty check` was not run. The `intake-mais-o47` branch was not rebased on v0.10.0. The mechanical edit was reviewed by reading its unusual lines and by the tests, not line by line. Nothing was installed or paid.
 
 ## Next
 
